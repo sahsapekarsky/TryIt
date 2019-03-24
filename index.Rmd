@@ -33,6 +33,6 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 library(ggplot2)
 ggplot(data=iris, aes(x = Sepal.Length , y = Sepal.Width)) +
   geom_point(alpha = 0.2,size = 3) +
-  geom_smooth(method = "glm",formula = y ~ log(x)) 
+  geom_smooth(method = "glm",formula = y ~ 2*x) 
 ```
 
